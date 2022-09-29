@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="Img/favicon.png" type="image/x-icon">
+    <title>Stylish Portfolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .rounded-circle:hover {
+            opacity: .7;
+        }
+
+        .a1 {
+            height: 55vh;
+            width: 100%;
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: .3s;
+        }
+
+        .a1:hover {
+            background-size: 85% 85%;
+            transition: .3s;
+            filter: alpha(opacity=30);
+        }
+
+        .whit {
+            font-size: 14px;
+            font-weight: 700;
+            color: white;
+            text-align: left;
+            margin-left: 10vh;
+            padding-top: 35vh;
+            text-transform: uppercase;
+        }
+
+        .whit:hover {
+            opacity: 1 !important;
+        }
+
+        .whip {
+            font-size: 18px;
+            font-weight: 300;
+            color: white !important;
+            text-align: left;
+            margin-left: 10vh;
+        }
+
+        .whip:hover {
+            opacity: 1;
+        }
+
+        .white {
+            color: #fff !important;
+            text-decoration: none;
+            display: inline-block;
+            position: relative;
+        }
+
+        .white:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            display: inline-block;
+            height: 1em;
+            width: 100%;
+            border-bottom: 1px solid;
+            margin-top: 10px;
+            opacity: 0;
+            -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+            transition: opacity 0.35s, transform 0.35s;
+            -webkit-transform: scale(0, 1);
+            transform: scale(0, 1);
+        }
+
+        .white:hover::after {
+            opacity: 1;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+
+        #btn-back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+        }
+
+        @media screen and (max-width: 480px) {
+            .whit {
+                font-size: 12px;
+            }
+
+            .whip {
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+
+            .a1 {
+                margin-bottom: 10px;
+                background-size: cover;
+            }
+        }
+    </style>
+    <script src="https://use.fontawesome.com/e079dfdc93.js"></script>
+</head>
+
+<body id="page-top">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top">
+        <a class="navbar-brand white" href="#">Stylish Portfolio</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link white" href="#page-top">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link white" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link white" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link white" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link white" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Button to top scroll  -->
+    <button type="button" class="btn btn-primary btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
+    <!-- first -->
+    <div class="container-fluid text-center d-flex"
+        style="background-image: url(Img/bg-masthead.jpg);background-repeat:no-repeat;height: 100vh;background-size:cover;">
+
+        <div class="col-lg-12 my-auto">
+            <h1 class="mb-1" style="font-size:12vh;">Stylish Portfolio</h1>
+            <p class="mb-5" style="font-size:2vw;"><i>A Free Bootstrap Theme by BL Soni College</i></p>
+            <button type="button" class="btn btn-primary" style="height:70px;width: 170px;" href="#">Find Out
+                More</button>
+        </div>
+
+    </div>
+    <!-- About -->
+    <div id="about"></div>
+    <div class="container text-center d-flex p-5 mt-5" style="font-size: 6vw">
+
+        <div class="col-lg-12">
+            <h1 class="md-2" style="font-size: 30px;font-weight: 700;">Stylish Portfolio is the perfect theme for your
+                next
+                project!</h1>
+            <p class="md-3" style="font-size: 20px;font-weight: 300;">This theme features a flexible, UX friendly
+                sidebar menu
+                and
+                stock photos from our friends at Unsplash!</p>
+            <button type="button" class="btn btn-secondary my-auto" style="height:70px;width: 170px;" href="#"><b>What
+                    We Offer</b></button>
+
+
+        </div>
+    </div>
+    <!-- Services -->
+    <div class="container-fluid text-center p-5" id="services" style="background: #00838f;">
+        <div class="row">
+            <div class="col">
+                <p style="color: #ffa000">SERVICES</p>
+                <h1 style="font-size: 45px;font-weight: 700;color: white;margin-bottom: 50px;">What We Offer</h1>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-sm-12 col-md-6 text-center">
+                <div class="rounded-circle  mx-auto mb-3" style="background-color: white;height: 120px;width: 120px">
+                    <img src="Img/mobile-phone (1).png" style="height: 42px;margin-top: 36px;" alt="">
+                </div>
+                <h1 style="font-size: 23px;font-weight: 640;color: white">Responsive</h1>
+                <p style="color: white;">Looks great on any screen size!</p>
+            </div>
+            <div class="col-lg-3 col-sm-12 col-md-6 text-center">
+                <div class="rounded-circle  mx-auto mb-3" style="background-color: white;height: 120px;width: 120px">
+                    <img src="Img/edit.png" style="height: 42px;margin-top: 36px;" alt="">
+                </div>
+                <h1 style="font-size: 23px;font-weight: 640;color: white">Redesigned</h1>
+                <p style="color: white;">Freshly redesigned for Bootstrap 4.</p>
+            </div>
+            <div class="col-lg-3 col-sm-12 col-md-6 text-center">
+                <div class="rounded-circle  mx-auto mb-3" style="background-color: white;height: 120px;width: 120px">
+                    <img src="Img/like.png" style="height: 42px;margin-top: 36px;" alt="">
+                </div>
+                <h1 style="font-size: 23px;font-weight: 640;color: white">Favorited</h1>
+                <p style="color: white;">Millions of users <i class="fa fa-heart" aria-hidden="true"></i> Start
+                    Bootstrap!</p>
+            </div>
+            <div class="col-lg-3 col-sm-12 col-md-6 text-center">
+                <div class="rounded-circle  mx-auto mb-3" style="background-color: white;height: 120px;width: 120px">
+                    <img src="Img/mustache.png" style="height: 42px;margin-top: 36px;" alt="">
+                </div>
+                <h1 style="font-size: 23px;font-weight: 640;color: white">Question</h1>
+                <p style="color: white;">I mustache you a question...</p>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+    <!-- Welcome -->
+    <div class="container-fluid text-center p-5"
+        style="background-image: url(Img/bg-callout.jpg); background-repeat:no-repeat;background-size:cover;height: 100vh;">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="p-5 mt-5 display-6" style="font-weight:700;">Welcome to <i>your</i><br>
+                    next website!</h1>
+                <button type="button" class="btn btn-primary" style="height:70px;width: 170px;" href="#">Download
+                    Now!</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div class="container text-center p-5" id="portfolio">
+        <div class="row">
+            <div class="col-lg-12">
+                <p style="color: #ffa000">PORTFOLIO</p>
+                <h1 style="font-size: 45px;font-weight: 700;color: #000;padding-bottom: 60px;">Recent Projects</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 p-0">
+                    <div class="a1" style="background-image: url('Img/portfolio-1.jpg');">
+                        <h5 class="whit">STATIONARY</h5>
+                        <p class="whip">A yellow pencil with envelopes on a clean, blue backdrop!</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12 p-0">
+                    <div class="a1" style="background-image: url('Img/portfolio-2.jpg');">
+                        <h5 class="whit">ICE CREAM</h5>
+                        <p class="whip">A dark blue background with a colored pencil, a clip, and a tiny ice cream
+                            cone!</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12" style="padding: 0px !important">
+                    <div class="a1" style="background-image: url('Img/portfolio-3.jpg');">
+                        <h5 class="whit">Strawberries</h5>
+                        <p class="whip">Strawberries are such a tasty snack, especially with a little sugar on top!
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-sm-12" style="padding: 0px !important">
+                    <div class="a1" style="background-image: url('Img/portfolio-4.jpg');">
+                        <h5 class="whit">Workspace</h5>
+                        <p class="whip">A yellow workspace with some scissors, pencils, and other objects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-center p-5" style="background-color: #1d809f !important;">
+        <div class="row">
+            <div class="col p-3">
+                <h1 style="font-size: 30px;font-weight: 650;color: #fff;">The
+                    buttons below are impossible to resist...</h1>
+                <a href="#" class="btn btn-light mt-4"
+                    style="height: 60px;width: 140px;color: #000;font-weight: 700;padding-top: 18px;">Click
+                    Me!</a>
+                <a href="#" class="btn btn-dark mt-4"
+                    style="height: 60px;width: 140px;color: #fff;font-weight: 700;padding-top: 18px;">Look
+                    at Me!</a>
+
+            </div>
+        </div>
+    </div>
+    <!-- Map -->
+    <div class="container-fluid" style="height: 80vh;" id="contact">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3605.8294484381145!2d74.63222331501252!3d25.343503483828307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3968c24a80b74741%3A0x69412c7d99f6204c!2sB.L.+Soni+College!5e0!3m2!1sen!2sin!4v1548331746043"
+            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <!-- footer -->
+    <div class="container-fluid text-center p-5">
+        <div class="row">
+
+            <div class="col-4">
+            </div>
+            <div class="col-4">
+                <div class="row">
+
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="rounded-circle  mx-auto mb-3"
+                            style="background-color: #1d809f;height: 60px;width: 60px;">
+                            <img src="Img/facebook.png" style="height: 22px;margin-top: 20px;" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="rounded-circle  mx-auto mb-3"
+                            style="background-color: #1d809f;height: 60px;width: 60px;">
+                            <img src="Img/twitter.png" style="height: 22px;margin-top: 20px;" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12">
+                        <div class="rounded-circle mx-auto mb-3"
+                            style="background-color: #1d809f;height: 60px;width: 60px;">
+                            <img src="Img/github.png" style="height: 22px;margin-top: 20px;" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-4">
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Copyright © BL Soni College 2019</p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        let mybutton = document.getElementById("btn-back-to-top");
+
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
